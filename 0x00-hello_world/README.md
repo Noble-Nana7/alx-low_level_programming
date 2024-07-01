@@ -1,1 +1,1 @@
-this is a ew c programmig dir
+THis is my first c readme

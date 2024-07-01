@@ -1,2 +1,0 @@
-#!/bin/bash
-export CFILE=main.c; gcc -c $CFILE -o ${CFILE%.c}.o
