@@ -1,3 +1,14 @@
+/**
+ * main - Entry point
+ *
+ * Description: This program generates and prints all possible combinations
+ *              of two two-digit numbers, separated by a comma and space. The combinations
+ *              are printed in ascending order.
+ *
+ * Return: Always 0 (Success)
+ */
+#include <stdio.h>
+
 int main(void)
 {
     int a, b;
@@ -21,6 +32,6 @@ int main(void)
     }
 
     putchar('\n');
-    return (0);
+    return 0;
 }
 
