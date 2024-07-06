@@ -3,23 +3,20 @@
 /**
  * main - Entry point
  *
- * Description: This code printsall possible combinations of
- * single-digit numbers. each spe by a space and a comma.
- * prints to stdout
+ * Description: This program prints all possible combinations of single-digit
+ *              numbers separated by a comma and a space, in ascending order.
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int start = 0;
-	int end = 9;
+	int num;
 
-	int i;
-
-	for (i = start; i <= end; ++i)
+	for (num = 0; num < 10; num++)
 	{
-		putchar(i + '0');
-		if (i < end)
+		putchar(num + '0');
+		if (num != 9)
 		{
 			putchar(',');
 			putchar(' ');
@@ -27,7 +24,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
-
 }
