@@ -11,18 +11,18 @@
 
 int main(void)
 {
-	int num;
+	int num = 48;
 
-	for (num = 0; num < 10; num++)
+	while (num <= 57)
 	{
-		putchar(num + '0');
-		if (num != 9)
+		putchar(num);
+		if (num != 57)
 		{
 			putchar(',');
 			putchar(' ');
 		}
+		num++;
 	}
-
 	putchar('\n');
-	return (0);
+	return(0);
 }
