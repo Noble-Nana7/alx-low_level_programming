@@ -14,12 +14,12 @@
  */
 int main(void)
 {
-    // Message to be printed
-    char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    /* Message to be printed */
+	char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-    // Using the write system call to print to stderr (file descriptor 2)
-    write(2, message, 59);
-	// 59 is the length of the message excluding the null terminator
+    /* Using the write system call to print to stderr (file descriptor 2) */
+	write(2, message, 59);
+	/* 59 is the length of the message excluding the null terminator */
 
-    return 1;
+	return (1);
 }
