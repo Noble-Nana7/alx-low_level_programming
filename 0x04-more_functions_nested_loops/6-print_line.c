@@ -1,25 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * more_numbers - prints numbers from 0 to 14 ten times
- *
- * Return: void
+ * print_line - Draws a straight line in the terminal
+ * @n: The number of times the character '_' should be printed
  */
-void more_numbers(void)
+void print_line(int n)
 {
 	int i;
-	int x;
 
-	for (x = 0; x < 10; x++)
+	if (n <= 0)
 	{
-		for (i = 0; i <= 14; i++)
+		_putchar('\n');
+	}
+	else
+	{
+		for (i = 0; i < n; i++)
 		{
-			if (i >= 10)
-			{
-				_putchar(i / 10 + '0');  /* Print the tens digit */
-			}
-			_putchar(i % 10 + '0');  /* Print the units digit */
+			_putchar('_');
 		}
 		_putchar('\n');
 	}
