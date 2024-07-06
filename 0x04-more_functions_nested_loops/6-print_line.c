@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- * more_numbers - prints numbers from 0 to 14
+ * more_numbers - prints numbers from 0 to 14 ten times
  *
  * Return: void
  */
-
 void more_numbers(void)
 {
 	int i;
@@ -14,16 +13,15 @@ void more_numbers(void)
 
 	for (x = 0; x < 10; x++)
 	{
-		i = 0;
-		while (i <= 14)
+		for (i = 0; i <= 14; i++)
 		{
 			if (i >= 10)
 			{
-				_putchar(i / 10 + '0');
+				_putchar(i / 10 + '0');  /* Print the tens digit */
 			}
-			_putchar(i % 10 + '0');
-			i++;
+			_putchar(i % 10 + '0');  /* Print the units digit */
 		}
 		_putchar('\n');
 	}
 }
+
