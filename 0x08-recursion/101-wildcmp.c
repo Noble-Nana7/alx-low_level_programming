@@ -1,6 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * wildcmp - Compares two strings and checks if they can be considered identical
+ * @s1: The first string to be compared
+ * @s2: The second string to be compared, which can contain the special character '*'
+ *
+ * Return: 1 if the strings can be considered identical, otherwise 0
+ *
+ * Description: This function compares two strings. The second string (s2) can
+ *              contain the special character '*', which can replace any string
+ *              (including an empty string). The function returns 1 if the strings
+ *              can be considered identical and 0 otherwise.
+ */
+
 int wildcmp(char *s1, char *s2)
 {
 	/* Base case: If both strings reach the end */
