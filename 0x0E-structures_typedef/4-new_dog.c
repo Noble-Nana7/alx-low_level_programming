@@ -11,7 +11,7 @@
  * Return: Pointer to the new dog_t structure, or NULL if the function fails.
  *
  * Description:
- * This function creates a new dog_t structure and initializes it with the 
+ * This function creates a new dog_t structure and initializes it with the
  * provided name, age, and owner. It stores a copy of the name and owner.
  * If the function fails, it returns NULL.
  */
@@ -28,14 +28,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	/* Allocate memory for the name copy */
 	name_copy = malloc(strlen(name) + 1);
-	if (name_copy == NULL) {
+	if (name_copy == NULL) 
+	{
 		free(new_dog);
 		return (NULL);
 	}
 
 	/* Allocate memory for the owner copy */
 	owner_copy = malloc(strlen(owner) + 1);
-	if (owner_copy == NULL) {
+	if (owner_copy == NULL) 
+	{
 		free(name_copy);
 		free(new_dog);
 		return (NULL);
