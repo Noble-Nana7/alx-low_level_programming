@@ -31,7 +31,6 @@ typedef struct dog dog_t;
  * This function initializes a struct dog variable with the provided name, age,
  * and owner.
  */
-
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
