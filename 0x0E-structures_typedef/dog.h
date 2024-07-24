@@ -19,7 +19,7 @@ struct dog
  * dog_t - Typedef for struct dog.
  */
 
-typedef dog dog_t;
+typedef struct dog dog_t;
 
 /**
  * init_dog - Initializes a variable of type struct dog.
