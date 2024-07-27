@@ -12,7 +12,8 @@
 void free_dog(dog_t *d)
 {
 	/* Check if the pointer d is not NULL */
-	if (d != NULL) {
+	if (d != NULL) 
+	{
 		/* Free the memory allocated for the name */
 		free(d->name);
 		
@@ -23,4 +24,3 @@ void free_dog(dog_t *d)
 		free(d);
 	}
 }
-
