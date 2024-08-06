@@ -6,7 +6,8 @@
  * @argc: Argument count.
  * @argv: Argument vector.
  *
- * Return: 0 on success, 1 if number of arguments is incorrect, 2 if bytes is negative.
+ * Return: 0 on success, 1 if number of arguments is incorrect,
+ * 2 if bytes is negative.
  */
 int main(int argc, char *argv[])
 {
