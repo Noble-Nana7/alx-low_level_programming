@@ -3,10 +3,11 @@
 #include <sys/stat.h>
 
 /**
- * create_file - Creates a file with specific permissions and writes text content.
+ * create_file - Creates a file with specific permissions
+ * and writes text content
  * @filename: The name of the file to create.
- * @text_content: A NULL terminated string to write to the file.
- * 
+ * @text_content: A NULL terminated string to write to the file
+ *
  * Return: 1 on success, -1 on failure.
  */
 int create_file(const char *filename, char *text_content)
