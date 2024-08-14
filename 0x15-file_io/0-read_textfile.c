@@ -1,7 +1,7 @@
-#include <fcntl.h>  // For open
-#include <unistd.h> // For read, write, close
-#include <stdlib.h> // For malloc, free
-#include <stdio.h>  // For perror
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include  "main.h"
 
 /**
